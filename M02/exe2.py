@@ -8,7 +8,7 @@ class Barang:
         print(f"| {'Nama Produk':<20}{':':^6}{self.nama:>20} |")
         print(f"| {'Qty Produk':<20}{':':^6}{self.jumlah:>20} |")
         print(f"| {'Harga Produk':<20}{':':^6}{harga:>20} |")
-        print("-"*50)
+        print(f'{"-"*48}:^50')
 
 
 class HandSanitizer(Barang):
@@ -65,7 +65,7 @@ if __name__ == "__main__":
 
     print()
     print(f"{'Laporan Bulanan E-Commerce':^50}")
-    print("-"*50)
+    print(f'{"-"*48}:^50')
     hand_sanitizer.cetak()
     ban_mobil.cetak()
     buah_buahan.cetak()
